@@ -1,0 +1,11 @@
+{
+    "@context":[
+      "https://schema.org/docs/jsonldcontext.jsonld",
+      {
+          "@vocab":"http://schema.org/"
+      }
+    ],
+    "@id":"incomplete-eg-01",
+    "@type":"Dataset",    
+    "name":"Incomplete example 01"
+}

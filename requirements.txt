@@ -1,4 +1,5 @@
 jupyterlab
+graphviz
 
 # This version of rdflib includes a fix for handling Link Headers.
 # It is forked from the 5.0.0 release

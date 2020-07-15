@@ -1,0 +1,18 @@
+# Example: test for name in Dataset
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix SO: <http://schema.org/> .
+@prefix sh: <http://www.w3.org/ns/shacl#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix SOSO: <http://science-on-schema.org/examples/shacl/> .
+
+SOSO:incomplete-eg-01-Dataset
+    a sh:NodeShape ;
+    sh:targetClass SO:Dataset ;
+
+    sh:property [
+        sh:path SO:name ;
+        sh:minCount 1 ;
+        sh:message "A dataset must have a name."@en ;
+    ] ;
+.
