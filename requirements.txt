@@ -5,6 +5,7 @@ graphviz
 # It is forked from the 5.0.0 release
 -e git+git://github.com/datadavev/rdflib.git@issue_rdflib-jsonld_85#egg=rdflib
 
+# At the time of writing, rdflib-jsonld had not released a version compatible with rdflib >=5
 -e git+git://github.com/RDFLib/rdflib-jsonld.git#egg=rdflib_jsonld
 
 # This version of extruct is patched for compatibility with rdflib 5.x
@@ -12,3 +13,7 @@ graphviz
 
 # This version of pySHACL includes additional graph metrics for reporting
 -e git+git://github.com/datadavev/pySHACL.git#egg=pyshacl
+
+# This version of pyld handles link headers
+# It is a correction to PR 129
+-e git+git://github.com/datadavev/pyld.git@issue_128#egg=pyld
